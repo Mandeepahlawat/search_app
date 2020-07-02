@@ -6,7 +6,7 @@ I've added a few users by default with website urls but I haven't added any frie
 
 #### Steps to run app:
 
-* Run rake db:seed
+* Run rake db:setup
 * Run rails s
 
 #### Features:
@@ -19,6 +19,7 @@ I've added a few users by default with website urls but I haven't added any frie
 * A users listing page consisting of name, short url, number of friends and links to edit/view details.
 * A users details page consiting of user details, list of headings for that user, link to user friends and link to all the remaining users to befriend with them.
 * Search functionality on users detail page where if matching heading exists then will list a path from current user to the targeted user. If existing user also contains some heading with text then his name would simply appear in search result without any path. If there are multiple users with matching heading then we'll get a multiple search results.
+* Added some sample users in seed to play around with
 
 
 #### Scalability:
