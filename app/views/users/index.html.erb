@@ -1,0 +1,26 @@
+<div class='col-12'>
+  <h1>Listing Users</h1>
+  <%= link_to "Add new user", new_user_path %>
+</div>
+<table class="table table-striped ">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Url</th>
+      <th scope="col">Friends Count</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+ <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <th scope="row"><%= user.name %></td>
+        <td><%= user.website.url %></td>
+        <td><%= user.friends_count %></td>
+        <td><%= link_to 'View', user_path(user) %></td>
+        <td><%= link_to 'Edit', edit_user_path(user) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
